@@ -1,0 +1,107 @@
+.card{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-direction:column;
+  height: 190px;
+  width: 115px;
+  margin: 10px 2px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.Nonmetal{
+  background-color: #ffab91;
+  border: 3px solid #ffab91;
+}
+.Nonmetal:hover{
+  background-color: #2e2e2e;
+  color:#ffab91 ;
+  transition: 0.2s;
+}
+.Gas.Noble.card{
+  background-color: #dbdbdb;
+  border: 3px solid #dbdbdb;
+}
+.Gas.Noble.card:hover{
+  background-color: #2e2e2e;
+  color:#dbdbdb ;
+  transition: 0.2s;
+}
+.Alkali.Metal.card{
+  background-color: #ffe0b2;
+  border: 3px solid #ffe0b2;
+}
+.Alkali.Metal.card:hover{
+  background-color: #2e2e2e;
+  color:#ffe0b2 ;
+  transition: 0.2s;
+}
+.Alkaline.Earth.Metal.card{
+  background-color: #ffcc80;
+  border: 3px solid #ffcc80;
+}
+.Alkaline.Earth.Metal.card:hover{
+  background-color: #2e2e2e;
+  color:#ffcc80 ;
+  transition: 0.2s;
+}
+.Metalloid{
+  background-color: #ff815b;
+  border: 3px solid #ff815b;
+}
+.Metalloid:hover{
+  background-color: #2e2e2e;
+  color:#ff815b ;
+  transition: 0.2s;
+}
+.Halogen{
+  background-color: #a5d6a7;
+  border: 3px solid #a5d6a7;
+}
+.Halogen:hover{
+  background-color: #2e2e2e;
+  color:#a5d6a7 ;
+  transition: 0.2s;
+}
+.Metal.Post-Transition.card{
+  background-color: #ffcdd2;
+  border: 3px solid #ffcdd2;
+}
+.Metal.Post-Transition.card:hover{
+  background-color: #2e2e2e;
+  color:#ffcdd2 ;
+  transition: 0.2s;
+}
+.Metal.Transition.card{
+  background-color: #d1c4e9;
+  border: 3px solid #d1c4e9;
+}
+.Metal.Transition.card:hover{
+  background-color: #2e2e2e;
+  color:#d1c4e9 ;
+  transition: 0.2s;
+}
+.Lanthanide{
+  background-color: #e6ee9c;
+  border: 3px solid #e6ee9c;
+}
+.Lanthanide:hover{
+  background-color: #2e2e2e;
+  color:#e6ee9c ;
+  transition: 0.2s;
+}
+.Actinide{
+  background-color: #b3e5fc;
+  border: 3px solid #b3e5fc;
+}
+.Actinide:hover{
+  background-color: #2e2e2e;
+  color:#b3e5fc ;
+  transition: 0.2s;
+}

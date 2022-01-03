@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Elements
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Elements</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div >
+    <ion-list>
+      <ion-item>
+        <ion-label>Showing {{filter}} elements</ion-label>
+        <ion-select  [(ngModel)]="group" (ionChange)="options(group)">
+          <ion-select-option *ngFor="let group of groups" [value]="group">{{group}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div style="display: flex;flex-wrap:wrap;justify-content:space-evenly">
+    <div *ngFor="let element of elements" >
+        <app-one-element routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-element>
+    </div>
+  </div>
+</ion-content>

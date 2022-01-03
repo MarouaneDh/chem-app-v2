@@ -1,0 +1,88 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Periodic table
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Periodic table</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div style="min-width:410px;max-width:410px">
+    <div style="display: flex;justify-content:space-between">
+      <div *ngFor="let element of firstRow" >
+        <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+      </div>
+    </div>
+    <div style="display: flex;justify-content:space-between">
+      <div style="display: flex;">
+        <div *ngFor="let element of firstSecondRow" >
+          <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div *ngFor="let element of secondSecondRow" >
+          <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex;justify-content:space-between">
+      <div style="display: flex;">
+        <div *ngFor="let element of firstThirdRow" >
+          <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div *ngFor="let element of secondThirdRow" >
+          <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex;justify-content:space-between">
+      <div *ngFor="let element of fourthRow" >
+        <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+      </div>
+    </div>
+    <div style="display: flex;justify-content:space-between">
+      <div *ngFor="let element of fifthRow" >
+        <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+      </div>
+    </div>
+    <div style="display: flex;justify-content:space-between">
+      <div *ngFor="let element of firstSixthRow" >
+        <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+      </div>
+      <div class="Lanthanide"><ion-icon name="arrow-down"></ion-icon></div>
+      <div *ngFor="let element of secondSixthRow" >
+        <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+      </div>
+    </div>
+    <div style="display: flex;justify-content:space-between">
+      <div *ngFor="let element of firstSeventhRow" >
+        <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+      </div>
+      <div class="Actinide"><ion-icon name="arrow-down"></ion-icon></div>
+      <div *ngFor="let element of secondSeventhRow" >
+        <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction:column;align-items:center">
+      <div style="display: flex;margin-top:20px">
+        <div *ngFor="let element of annexFirstRow" >
+          <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div *ngFor="let element of annexSecondRow" >
+          <app-one-cell routerLink="/tabs/tab1/{{element.Z}}" [element]="element"></app-one-cell>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

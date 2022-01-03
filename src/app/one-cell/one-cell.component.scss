@@ -1,0 +1,59 @@
+.cell{
+  width: 17px;
+  height: 17px;
+  margin: 2.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.Nonmetal{
+  background-color: #ffab91;
+  border: 3px solid #ffab91;
+}
+
+.Gas.Noble.cell{
+  background-color: #dbdbdb;
+  border: 3px solid #dbdbdb;
+}
+
+.Alkali.Metal.cell{
+  background-color: #ffe0b2;
+  border: 3px solid #ffe0b2;
+}
+
+.Alkaline.Earth.Metal.cell{
+  background-color: #ffcc80;
+  border: 3px solid #ffcc80;
+}
+
+.Metalloid{
+  background-color: #ff815b;
+  border: 3px solid #ff815b;
+}
+
+.Halogen{
+  background-color: #a5d6a7;
+  border: 3px solid #a5d6a7;
+}
+
+.Metal.Post-Transition.cell{
+  background-color: #ffcdd2;
+  border: 3px solid #ffcdd2;
+}
+
+.Metal.Transition.cell{
+  background-color: #d1c4e9;
+  border: 3px solid #d1c4e9;
+}
+
+.Lanthanide{
+  background-color: #e6ee9c;
+  border: 3px solid #e6ee9c;
+}
+
+.Actinide{
+  background-color: #b3e5fc;
+  border: 3px solid #b3e5fc;
+}
